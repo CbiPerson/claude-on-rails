@@ -13,20 +13,29 @@ Before you start, make sure you have:
 
 You do **not** need to install `claude-swarm` separately -- it's pulled in as a dependency automatically.
 
-## Step 1: Create a Rails App (or Use an Existing One)
+## Step 1: Create a Rails App
 
-If you don't have a Rails project handy, create one:
+The fastest way to get a demo app is with the [swarmpod-core](https://github.com/CbiPerson/swarmpod-core) template:
+
+```bash
+gem install swarmpod-core
+rails new demo_app --template $(gem contents swarmpod-core | grep rails_swarmpod.rb)
+cd demo_app
+```
+
+Or clone the template repo directly:
+
+```bash
+git clone https://github.com/CbiPerson/swarmpod-core.git /tmp/swarmpod-core
+rails new demo_app --template /tmp/swarmpod-core/templates/rails_swarmpod.rb
+cd demo_app
+```
+
+You can also use any existing Rails project, or create a plain one:
 
 ```bash
 rails new demo_app
 cd demo_app
-```
-
-For an API-only app:
-
-```bash
-rails new demo_api --api
-cd demo_api
 ```
 
 ## Step 2: Add ClaudeOnRails
