@@ -2,6 +2,8 @@
 
 A hands-on guide to demoing and using ClaudeOnRails for the first time.
 
+**See it in action:** The [CLAUDE-ON-RAILS-DEMO](https://github.com/CbiPerson/CLAUDE-ON-RAILS-DEMO) repo is a complete working example built by following these steps.
+
 ## What You'll Need
 
 Before you start, make sure you have:
@@ -172,6 +174,12 @@ After the initial setup, you can customize:
 - **Agent prompts** - Edit files in `.claude-on-rails/prompts/` to add project-specific conventions or domain knowledge
 - **Swarm config** - Edit `claude-swarm.yml` to add custom agents, change model assignments, or adjust agent connections
 - **CLAUDE.md** - Add project-level instructions that all agents will follow
+
+## Related Repos
+
+- [claude-on-rails](https://github.com/CbiPerson/claude-on-rails) -- the gem itself
+- [CLAUDE-ON-RAILS-DEMO](https://github.com/CbiPerson/CLAUDE-ON-RAILS-DEMO) -- a working demo built from these steps
+- [swarmpod-core](https://github.com/CbiPerson/swarmpod-core) -- the Rails template used as a starting point
 
 ## Next Steps
 
