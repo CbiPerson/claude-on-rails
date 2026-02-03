@@ -51,6 +51,12 @@ ClaudeOnRails is a Ruby gem that leverages claude-swarm to create intelligent AI
 
 - Note that releases are never ready if there are any tests failing in the test suites. Never tell me that a release is ready unless we have a clean build.
 
+## Demo / Getting Started
+
+- See [NEWBIE.md](./NEWBIE.md) for a step-by-step guide to demoing ClaudeOnRails with a real Rails project
+- The basic flow: add the gem, run `rails generate claude_on_rails:swarm`, then `claude-swarm`
+- Press Y when prompted for Rails MCP Server setup during generation
+
 ## Architecture Notes
 
 - The gem analyzes Rails projects to detect patterns and frameworks
